@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detyra 8</title>
+</head>
+<body>
+  <table>
+    <tr>
+    <th>Name:</th>
+    <td id="name">Albiona Berisha</td>
+    <td id="hideEmrin"  class="btn btn-danger">Emri</td>
+    <td id="showName"  class="btn btn-danger">Shaq Emrin</td>
+    </tr>
+    <tr>
+    <th>Email:</th>  
+    <td id="email">albiona@example.com</td>     
+    <td id="hideEmail"  class="btn btn-info">Email</td> 
+    <td id="showEmail" class="btn btn-info">Shaq Email</td>
+    </tr>  
+    <tr>
+    <th>Phone:</th>
+    <td id="phone">123-45-678</td>
+    <td id="hidePhone"  class="btn btn-warning">Phone Number</td>
+    <td id="showPhone" class="btn btn-warning">Shaq Phone</td>
+  </tr>
+</table>
+<button id="hideAllBtn" class="btn btn-danger">Hide All</button>
+<button id="showAllBtn" class="btn btn-success">Show All</button>
+<button id="send" class="btn btn-primary" onclick="">Click to Send a Message</button>
+</div>
+<script>
+      $(document).ready(function(){
+        $("#send").click(function(){
+            prompt("Send a message to author!")
+        })
+    })
+    $(document).ready(function(){
+        $("#hideEmrin").click(function(){
+            $("#name").hide();
+        });
+        $("#showName").click(function(){
+            $("#name").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#hideEmail").click(function(){
+            $("#email").hide();
+        });
+        $("#showEmail").click(function(){
+            $("#email").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#hidePhone").click(function(){
+            $("#phone").hide();
+        });
+        $("#showPhone").click(function(){
+            $("#phone").show();
+        });
+    });
+    $(document).ready(function(){
+        $("#hideAllBtn").click(function(){
+            $("table").hide();
+       
+        });
+        $("#showAllBtn").click(function(){
+            $("table").show();
+       
+        });
+        });
+        
+    // document.getElementById("myButton").onclick = function(){
+    //     var dayweek = document.getElementById("mytext").value;
+    //     console.log("E marte ,Korrik")
+
+    // }
+</script>
+</body>
+</html>
